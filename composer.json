@@ -1,0 +1,31 @@
+{
+    "name": "kvaksrud/laravel-azure-cognitive-services-scaffolding",
+    "description": "This package makes views and a data structure surrounding the Kvaksrud\\laravel-azure-cognitive-services composer package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Patrick Kvaksrud",
+            "email": "patrick@kvaksrud.no"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "^7.3|^8.0",
+        "laravel/framework": "^v8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kvaksrud\\AzureCognitiveServices\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kvaksrud\\AzureCognitiveServices\\AzureCognitiveServicesProvider"
+            ]
+        }
+    }
+}
