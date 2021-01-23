@@ -1,6 +1,6 @@
 {
-    "name": "kvaksrud/laravel-azure-cognitive-services-scaffolding",
-    "description": "This package makes views and a data structure surrounding the Kvaksrud\\laravel-azure-cognitive-services composer package",
+    "name": "kvaksrud/laravel-azure-cognitive-services-ui",
+    "description": "This package makes views and a data structure surrounding the Kvaksrud\\laravel-azure-cognitive-services-api composer package",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -18,13 +18,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Kvaksrud\\AzureCognitiveServices\\": "src/"
+            "Kvaksrud\\AzureCognitiveServices\\Ui\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Kvaksrud\\AzureCognitiveServices\\AzureCognitiveServicesProvider"
+                "Kvaksrud\\AzureCognitiveServices\\Ui\\AzureCognitiveServicesUiServiceProvider"
             ]
         }
     }
